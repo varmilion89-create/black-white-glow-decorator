@@ -150,9 +150,9 @@ class $modify(AutoDecoratorEditorUI, EditorUI) {
                     ray->setRotation(angle * 57.2957795f + (side < 0 ? 180.f : 0.f));
                     ray->setColor({255, 255, 255});
                     ray->setChildColor({255, 255, 255});
-                    ray->m_baseColorID = whiteChannel;
-                    ray->m_detailColorID = whiteChannel;
-                    ));
+                    ray->setOpacity(static_cast<unsigned char>(
+    150 + static_cast<int>(unit(key ^ 0xc2b2ae35U) * 85.f)
+));
                     ++created;
                 }
             }
