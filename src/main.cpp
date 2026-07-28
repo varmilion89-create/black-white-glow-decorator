@@ -118,8 +118,6 @@ class $modify(AutoDecoratorEditorUI, EditorUI) {
                     core->setRotation(unit(base ^ 0x27d4eb2dU) * 45.f);
                     core->setColor({0, 0, 0});
                     core->setChildColor({0, 0, 0});
-                    core->m_baseColorID = blackChannel;
-                    core->m_detailColorID = blackChannel;
                     core->setOpacity(210);
                     ++created;
                 }
@@ -154,8 +152,6 @@ class $modify(AutoDecoratorEditorUI, EditorUI) {
                     ray->setChildColor({255, 255, 255});
                     ray->m_baseColorID = whiteChannel;
                     ray->m_detailColorID = whiteChannel;
-                    ray->setOpacity(static_cast<unsigned char>(
-                        150 + static_cast<int>(unit(key ^ 0xc2b2ae35U) * 85.f)
                     ));
                     ++created;
                 }
